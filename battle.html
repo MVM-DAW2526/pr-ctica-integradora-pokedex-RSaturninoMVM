@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/battle.css">
+    <title>PokéDex - Batalla</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://img.icons8.com/color/48/pokeball--v1.png" alt="Pokeball" style="width: 50px; height: 50px;">
+            <h1>PokéDex</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="espacio">Inici</a></li>
+                <li><a href="my_pokemons.html">Els meus Pokémon</a></li>
+                <li><a href="hunt.html" class="active">Caça</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="zona-batalla">
+            <a href="index.html" class="boton-volver">Tornar a Inici</a>
+            <div class="acciones">
+                <button class="atacar">Atacar</button>
+                <button class="mochila">Mochila</button>
+                <button class="cambiar">Cambiar</button>
+                <button class="escapar">Escapar</button>
+                <div class="informacion">
+                    <p>Hola actaca, mochila, cambiar, escapar.</p>
+                </div>
+            </div>
+            <div class="zona">
+                <div id="contenedor-enemigo">
+                    <div class="barra-vida"><div id="salud-roja"></div></div>
+                    <img id="pokemon" src="" alt="">
+                </div>
+                <img src="img/battle_bg.png" class="imagen-batalla"
+                    alt="Zona Pokemon para hacer peleas de bichillos">
+            </div>
+        </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/battle.js"></script>
+
+</body>
+</html>
